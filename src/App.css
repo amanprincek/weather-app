@@ -1,0 +1,98 @@
+/* Reset and base layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6, #5f75cd, #74ebd5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for app */
+.app {
+  text-align: center;
+  padding: 50px 20px;
+  flex:1; /* Take available vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #14111155;  
+}
+
+
+/* Input */
+input {
+  padding: 10px;
+  width: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-left: 200px;
+  margin-right: 200px;
+  outline: none;
+}
+
+/* Buttons */
+button {
+
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; /*this red colour specifies
+                                 that this is old practise*/
+  margin-top: 15px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+button:hover {
+  background-color: #5f75cd;
+}
+
+
+.weather-box {
+  margin-top: 30px;
+  background: rgba(195, 215, 228, 0.9);
+  padding: 100px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weather-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #222;
+}
+
+.weather-box p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+
+footer {
+  position: bottom;
+  margin-top: 100px;
+  text-align: center;
+  padding:25px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 14px;
+  backdrop-filter: blur(6px);
+}
+ 
